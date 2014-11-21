@@ -5,7 +5,7 @@
 
 ## Install
 
-react-int is a command line utility. It requires [Node and npm](http://nodejs.org/) and [Git](http://git-scm.com/). Install it with npm.
+`react-int` is a command line utility. It requires [Node and npm](http://nodejs.org/) and [Git](http://git-scm.com/). Install it with npm.
 
     $ npm install -g urban/react-init
 
@@ -25,4 +25,5 @@ See the [changelog](CHANGELOG.md).
 
 ## License
 
-[ISC license](LICENSE) and copyright Urban Faubion.
+Copyright (c) 2014 Urban Faubion (twitter: @urbanfaubion)
+Licensed under the ISC license.
