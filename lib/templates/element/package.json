@@ -4,6 +4,7 @@
   "description": "{{description}}",
   "author": "{{author}} <{{email}}>",
   "license": "ISC",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "{{repository}}"
