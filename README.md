@@ -1,9 +1,6 @@
 
 # react-init
 
-[![Dependency Status][david-image]][david-url]
-[![License][license-image]][license-url]
-
 > Interactively create project scaffolding for a React element module.
 
 ## Install
