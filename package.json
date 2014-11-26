@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "6to5": "^1.12.26",
+    "chalk": "^0.5.1",
     "co": "^4.0.0",
     "co-each": "^0.1.0",
     "consolidate": "^0.10.0",
