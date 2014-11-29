@@ -26,9 +26,8 @@
     "build-examples": "webpack --config ./config/webpack-examples.config.js --progress --profile --colors",
     "dev-examples": "webpack-dev-server --inline --content-base ./examples/ --config ./config/webpack-dev-examples.config.js --progress --colors"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "0.12.x"
+  "dependencies": {
+    "react": "^0.12.x"
   },
   "devDependencies": {
     "browserify": "^6.3.3",
