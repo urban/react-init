@@ -1,4 +1,19 @@
 
+0.0.4 / 2014-11-29
+==================
+
+ * [changed] now using  instead of custom prompt class
+ * [added] adding  file.
+ * [fixed] passing the correct working dir into Metalsmith
+ * [fixed] example reference name change
+ * [changed] making  a direct dependency
+ * [changed] refactoring webpack example config modules
+ * [changed] now using browserify for release build
+ * [added] new  for release build
+ * [fixed] switched  to  in render return
+ * [changed] breaking into multiple modules
+ * release 0.0.3
+
 0.0.3 / 2014-11-26
 ==================
 
