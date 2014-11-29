@@ -1,10 +1,10 @@
 'use strict';
 
-var examplesConfig = require('./webpack-examples.config');
+var config = require('./webpack-examples.config');
 
 Object.assign = require('object-assign');
 
-module.exports = Object.assign(examplesConfig, {
+module.exports = Object.assign(config, {
   devtool: 'sourcemap',
   debug: true
 });

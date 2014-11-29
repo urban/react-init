@@ -7,7 +7,7 @@ var webpack = require('webpack');
 var EXAMPLES_DIR = path.resolve(__dirname, '../examples');
 var BUILD_DIR = 'build';
 
-module.exports = require('./make-webpack-config')({
+module.exports = {
 
   entry: entriesArray(),
 
@@ -18,14 +18,38 @@ module.exports = require('./make-webpack-config')({
     publicPath: '/' + BUILD_DIR + '/'
   },
 
-  alias: {
-    '{{name}}': '../../lib/index'
+  module: {
+    loaders: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'jsx-loader?harmony'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader?limit=8192' // inline base64 URLs for <=8k images, direct URLs for the rest
+      }
+    ]
+  },
+
+  resolveLoader: {
+    root: path.join(__dirname, '../node_modules')
+  },
+
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css'],
+    alias: {
+      '{{name}}': '../../lib/index'
+    }
   },
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('shared.js')
   ]
-});
+};
 
 function entriesArray() {
   return fs.readdirSync(EXAMPLES_DIR).reduce(entriesSum, {});
