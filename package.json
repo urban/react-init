@@ -33,6 +33,7 @@
     "chalk": "^0.5.1",
     "co": "^4.0.0",
     "co-each": "^0.1.0",
+    "commander": "^2.5.0",
     "consolidate": "^0.10.0",
     "handlebars": "^2.0.0",
     "inquirer": "^0.8.0",
