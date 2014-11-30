@@ -1,6 +1,6 @@
 {
   "name": "react-init",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Interactively create project scaffolding for a React element module.",
   "author": "Urban Faubion <urban.faubion@gmail.com>",
   "license": "ISC",
