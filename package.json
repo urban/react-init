@@ -16,7 +16,6 @@
   "readme": "README.md",
   "files": [
     "./lib/",
-    "./src/",
     "./bin/",
     "./README.md",
     "./LICENSE"
@@ -28,6 +27,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "react",
+    "generator",
+    "scaffolding"
+  ],
   "dependencies": {
     "6to5": "^1.12.26",
     "chalk": "^0.5.1",
@@ -39,9 +43,5 @@
     "metalsmith": "^1.0.1",
     "minimist": "^1.1.0",
     "mz": "^1.1.0"
-  },
-  "keywords": [
-    "react",
-    "scaffolding"
-  ]
+  }
 }
