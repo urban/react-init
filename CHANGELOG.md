@@ -1,4 +1,13 @@
 
+0.2.0 / 2014-12-01 
+==================
+
+ * [changed] requireing node >= 11.13
+ * [added] license
+ * [changed] the question files are now JS instead of JSON so you can use all the features of inquirer
+ * [added] bower manifest to template files
+ * [changed] using minimist instead of commander for argument processing
+
 0.1.0 / 2014-11-29 
 ==================
 
