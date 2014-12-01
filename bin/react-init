@@ -1,7 +1,22 @@
 #!/usr/bin/env node
-/**
- * ES6 support for Node 0.10.
- */
-require("6to5/register");
+var version = process.version.split('.');
+var major = version[0].replace('v', '');
+var minor = version[1];
 
-require('../lib/cli');
+if (major < 1 && minor < 11) {
+  console.error();
+  console.error('react-init requires node >= 0.11.3');
+  console.error();
+  process.exit(1);
+}
+
+var spawn = require('child_process').spawn;
+var to5 = require.resolve('6to5/bin/6to5-node');
+var bin = require.resolve('../lib/cli.js');
+
+var proc = spawn(to5, [bin], {
+    stdio: 'inherit'
+});
+proc.on('close', function (code) {
+  process.exit(code);
+});
