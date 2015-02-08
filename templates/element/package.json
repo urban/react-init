@@ -19,7 +19,7 @@
     "./README.md",
     "./LICENSE"
   ],
-  "main": "./lib/index.jsx",
+  "main": "./lib/{{name}}.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "gulp --gulpfile ./config/gulpfile.js --cwd .",

@@ -43,7 +43,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.css'],
     alias: {
-      '{{name}}': '../../lib/index'
+      '{{name}}': '../../lib/{{name}}'
     }
   },
 
