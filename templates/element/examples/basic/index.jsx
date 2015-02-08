@@ -1,34 +1,30 @@
 'use strict';
 
-var React = require('react');
-var {{element}} = require('{{name}}');
+import React from 'react';
+import {{element}} from '{{name}}';
+import styles from '../global-styles';
 
-require('normalize.css/normalize.css');
-require('./styles.css');
-
-class Application {
+var Application = React.createClass({
 
   render() {
     return (
       <div>
-        <fieldset>
-          <legend>Default</legend>
+        <fieldset style={styles.fieldset}>
+          <legend style={styles.legend}>Default</legend>
 
-          <{{element}} />
+          <{{element}} style={styles.component} />
 
         </fieldset>
       </div>
     );
   }
-}
-
-var ApplicationTag = React.createClass(Application.prototype);
+});
 
 if (typeof window !== 'undefined') {
   React.render(
-    <ApplicationTag />,
-    document.querySelector('#react')
+    <Application />,
+    document.querySelector('#root')
   );
 }
 
-module.exports = ApplicationTag;
+export default Application;

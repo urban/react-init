@@ -30,22 +30,18 @@
     "react": "^0.12.x"
   },
   "devDependencies": {
+    "6to5": "^3.5.3",
+    "6to5-core": "^3.5.3",
+    "6to5-loader": "^3.0.0",
+    "6to5ify": "^4.1.0",
     "browserify": "^6.3.3",
     "browserify-shim": "^3.8.0",
-    "css-loader": "^0.9.0",
-    "cssify": "^0.6.0",
     "envify": "^3.2.0",
     "file-loader": "^0.8.1",
     "gulp": "^3.8.10",
     "gulp-sourcemaps": "^1.2.8",
     "gulp-uglify": "^1.0.1",
-    "jsx-loader": "^0.12.0",
     "merge-stream": "^0.1.6",
-    "normalize.css": "^3.0.2",
-    "object-assign": "^1.0.0",
-    "react-tools": "^0.12.0",
-    "reactify": "^0.17.1",
-    "style-loader": "^0.8.1",
     "through2": "^0.6.3",
     "uglify-js": "^2.4.15",
     "url-loader": "^0.5.5",
@@ -61,20 +57,14 @@
   ],
   "browserify": {
     "transform": [
-      [
-        "reactify",
-        {
-          "es6": true
-        }
-      ],
+      "6to5ify",
       "browserify-shim",
       [
         "envify",
         {
           "detect-globals": true
         }
-      ],
-      "cssify"
+      ]
     ]
   },
   "browserify-shim": {

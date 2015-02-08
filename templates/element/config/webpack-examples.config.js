@@ -22,7 +22,8 @@ module.exports = {
     loaders: [
       {
         test: /\.(js|jsx)$/,
-        loader: 'jsx-loader?harmony'
+        exclude: /node_modules/,
+        loader: '6to5-loader'
       },
       {
         test: /\.css$/,

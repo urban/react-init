@@ -1,16 +1,16 @@
 'use strict';
 
-var React = require('react');
+import React from 'react';
 
-class {{element}} {
+var {{element}} = React.createClass({
 
   render() {
     return (
-      <div>
+      <div {...this.props}>
         Hello World!
       </div>
-    )
+    );
   }
-}
+});
 
-module.exports = React.createClass({{element}}.prototype);
+export default {{element}};

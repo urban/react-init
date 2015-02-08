@@ -6,7 +6,6 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var merge = require('merge-stream');
 var through = require('through2');
-var reactify = require('reactify');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var pkg = require('../package.json');
