@@ -33,18 +33,18 @@
     "scaffolding"
   ],
   "dependencies": {
-    "6to5": "^1.12.26",
+    "6to5": "^3.3.12",
     "chalk": "^0.5.1",
-    "co": "^4.0.0",
+    "co": "^4.2.0",
     "co-each": "^0.1.0",
     "consolidate": "^0.10.0",
     "handlebars": "^2.0.0",
     "inquirer": "^0.8.0",
-    "metalsmith": "^1.0.1",
+    "metalsmith": "^1.2.0",
     "minimist": "^1.1.0",
-    "mz": "^1.1.0"
+    "mz": "^1.2.1"
   },
   "engines": {
-    "node": ">= 0.11.13"
+    "iojs": ">=1.1.0"
   }
 }
