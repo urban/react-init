@@ -12,9 +12,9 @@ if (major < 1 && minor < 11) {
 
 var spawn = require('child_process').spawn;
 var to5 = require.resolve('6to5/bin/6to5-node');
-var bin = require.resolve('../lib/cli.js');
+var script = require.resolve('../lib/cli.js');
 
-var proc = spawn(to5, [bin], {
+var proc = spawn(to5, [script, '--harmony'], {
     stdio: 'inherit'
 });
 proc.on('close', function (code) {
