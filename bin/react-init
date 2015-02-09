@@ -1,15 +1,4 @@
 #!/usr/bin/env node
-var version = process.version.split('.');
-var major = version[0].replace('v', '');
-var minor = version[1];
-var patch = version[2];
-
-if (major < 1 && minor < 11 && patch < 3) {
-  console.error();
-  console.error('react-init requires iojs or node >= 0.11.3');
-  console.error();
-  process.exit(1);
-}
 
 var spawn = require('child_process').spawn;
 var to5 = require.resolve('6to5/bin/6to5-node');
