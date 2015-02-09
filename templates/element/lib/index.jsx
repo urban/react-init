@@ -2,7 +2,9 @@
 
 import React from 'react';
 
-var {{element}} = React.createClass({
+export default React.createClass({
+
+  displayName: '{{element}}',
 
   render() {
     return (
@@ -12,5 +14,3 @@ var {{element}} = React.createClass({
     );
   }
 });
-
-export default {{element}};

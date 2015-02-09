@@ -19,19 +19,25 @@
     "./README.md",
     "./LICENSE"
   ],
-  "main": "./lib/{{name}}.jsx",
+  "main": "./lib/{{element}}.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "release": "gulp --gulpfile ./config/gulpfile.js --cwd .",
     "build-examples": "webpack --config ./config/webpack-examples.config.js --progress --profile --colors",
     "dev-examples": "webpack-dev-server --inline --content-base ./examples/ --config ./config/webpack-dev-examples.config.js --progress --colors"
   },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/6to5-jest",
+    "testFileExtensions": ["es6", "js", "jsx"],
+    "moduleFileExtensions": ["js", "jsx", "json", "es6"]
+  },
   "dependencies": {
+    "6to5": "^3.5.3",
     "react": "^0.12.x"
   },
   "devDependencies": {
-    "6to5": "^3.5.3",
     "6to5-core": "^3.5.3",
+    "6to5-jest": "^3.0.0",
     "6to5-loader": "^3.0.0",
     "6to5ify": "^4.1.0",
     "browserify": "^6.3.3",
@@ -41,6 +47,8 @@
     "gulp": "^3.8.10",
     "gulp-sourcemaps": "^1.2.8",
     "gulp-uglify": "^1.0.1",
+    "jest": "^0.1.37",
+    "jest-cli": "^0.2.2",
     "merge-stream": "^0.1.6",
     "through2": "^0.6.3",
     "uglify-js": "^2.4.15",
