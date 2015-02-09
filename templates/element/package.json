@@ -27,6 +27,7 @@
     "dev-examples": "webpack-dev-server --inline --content-base ./examples/ --config ./config/webpack-dev-examples.config.js --progress --colors"
   },
   "jest": {
+    "testDirectoryName": "test",
     "scriptPreprocessor": "<rootDir>/node_modules/6to5-jest",
     "testFileExtensions": ["es6", "js", "jsx"],
     "moduleFileExtensions": ["js", "jsx", "json", "es6"]
