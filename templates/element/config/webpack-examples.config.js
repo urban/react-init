@@ -3,6 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var webpack = require('webpack');
+var pkg = require('../package.json');
 
 var EXAMPLES_DIR = path.resolve(__dirname, '../examples');
 var BUILD_DIR = 'build';
@@ -23,7 +24,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: '6to5-loader'
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
@@ -43,7 +44,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.css'],
     alias: {
-      '{{name}}': '../../lib/{{name}}'
+      '{{name}}': '../../lib/{{element}}'
     }
   },
 

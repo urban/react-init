@@ -31,8 +31,8 @@ gulp.task('default', function () {
 function bundle(name) {
 
   var bundler = browserify({
-      entries: [pkg.main],
-      standalone: '{{element}}',
+      entries: ['./lib/' + pkg.reactInitOptions.entryFile],
+      standalone: pkg.reactInitOptions.exportVar,
       debug: true
     });
   // NOTE: transforms specified in package.json
@@ -58,6 +58,7 @@ function prefixBanner() {
     ' * @version ' + pkg.version,
     ' * @link ' + pkg.homepage,
     ' * @license ' + pkg.license,
+    ' * @element ' + pkg.reactInitOptions.exportVar,
     ' */',
     ''].join('\n');
 

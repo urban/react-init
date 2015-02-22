@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 var spawn = require('child_process').spawn;
-var to5 = require.resolve('6to5/bin/6to5-node');
+var babel = require.resolve('babel/bin/babel-node');
 var script = require.resolve('../lib/cli.js');
 
-var proc = spawn(to5, [script, '--harmony'], {
+var proc = spawn(babel, [script, '--harmony'], {
     stdio: 'inherit'
 });
 proc.on('close', function (code) {

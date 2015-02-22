@@ -1,6 +1,6 @@
 'use strict';
 
-require("6to5/polyfill");
+require("babel/polyfill");
 var config = require('./webpack-examples.config');
 
 module.exports = Object.assign(config, {
