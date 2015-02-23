@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-require("6to5/register");
+require("babel/register");
 // es6 modules
 var someModule = require('../lib/index');
 
