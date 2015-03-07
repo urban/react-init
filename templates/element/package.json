@@ -22,7 +22,8 @@
   "main": "./lib/{{element}}.js",
   "scripts": {
     "test": "jest",
-    "release": "gulp"
+    "release": "gulp",
+    "dev": "cd ./examples && npm start"
   },
   "jest": {
     "testDirectoryName": "test",
