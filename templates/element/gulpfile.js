@@ -8,7 +8,7 @@ var merge = require('merge-stream');
 var through = require('through2');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
-var pkg = require('../package.json');
+var pkg = require('./package.json');
 
 gulp.task('default', function () {
 

@@ -1,0 +1,19 @@
+{
+  "name": "{{name}}-examples",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node server.js"
+  },
+  "dependencies": {
+    "babel": "^4.4.5",
+    "babel-core": "^4.4.5",
+    "babel-loader": "^4.0.0",
+    "babel-runtime": "^4.6.4",
+    "react": "^0.12.2",
+    "react-hot-loader": "^1.1.5",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "devDependencies": {}
+}

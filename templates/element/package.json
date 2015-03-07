@@ -22,9 +22,7 @@
   "main": "./lib/{{name}}.js",
   "scripts": {
     "test": "jest",
-    "release": "gulp --gulpfile ./config/gulpfile.js --cwd .",
-    "build-examples": "webpack --config ./config/webpack-examples.config.js --progress --profile --colors",
-    "dev-examples": "webpack-dev-server --inline --content-base ./examples/ --config ./config/webpack-dev-examples.config.js --progress --colors"
+    "release": "gulp"
   },
   "jest": {
     "testDirectoryName": "test",
@@ -39,8 +37,7 @@
   "devDependencies": {
     "babel-core": "^4.4.5",
     "babel-jest": "^4.0.0",
-    "babel-loader": "^4.0.0",
-    "babel-runtime": "^4.6.4",
+    "babel-runtime": "^4.7.2",
     "babelify": "^5.0.3",
     "browserify": "^6.3.4",
     "browserify-shim": "^3.8.3",
@@ -56,9 +53,7 @@
     "uglify-js": "^2.4.16",
     "url-loader": "^0.5.5",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.0.0",
-    "webpack": "^1.5.3",
-    "webpack-dev-server": "^1.7.0"
+    "vinyl-source-stream": "^1.0.0"
   },
   "keywords": [
     "react",
