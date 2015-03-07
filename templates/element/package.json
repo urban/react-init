@@ -19,7 +19,7 @@
     "./README.md",
     "./LICENSE"
   ],
-  "main": "./lib/{{name}}.js",
+  "main": "./lib/{{element}}.js",
   "scripts": {
     "test": "jest",
     "release": "gulp"
