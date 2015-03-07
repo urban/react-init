@@ -9,11 +9,12 @@
 
 ## Development
 
-  See [examples README](examples/README.md).
+    npm run dev
+    open http://localhost:3000/
 
 ## Deploy
 
-    $ npm run-script build
+    npm run release
 
 ## License
 
